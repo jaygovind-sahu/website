@@ -11433,3 +11433,12 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+#contact-form .form-control {
+    margin-top: 1rem;
+}
+
+#contact-form button {
+    color: white;
+    margin-top: 1rem;
+}
