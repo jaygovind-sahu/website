@@ -1,3 +1,12 @@
+/*!
+* Start Bootstrap - Jaygovind Sahu v0.0.1 (https://jaygovind-sahu.github.io)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/jaygovind-sahu.github.io/blob/master/LICENSE)
+*/
+//
+// Scripts
+//
+
 $(document).ready(function() {
   $("#contact-success-alert").hide();
   $("#contact-danger-alert").hide();
@@ -41,3 +50,29 @@ function sendMessage(event) {
         $("#contact-progress-spinner").hide()
       });
   }
+
+window.addEventListener('DOMContentLoaded', event => {
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
+
+});

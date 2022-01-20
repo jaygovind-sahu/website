@@ -1,0 +1,259 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title Jaygovind Sahu
+  link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
+  // Font Awesome icons (free version)
+  script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js' crossorigin='anonymous')
+  // Google fonts
+  link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i' rel='stylesheet' type='text/css')
+  // Core theme CSS (includes Bootstrap)
+  link(href='css/styles.css' rel='stylesheet')
+// Navigation
+nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+  a.navbar-brand.js-scroll-trigger(href='#page-top')
+    span.d-block.d-lg-none Jaygovind Sahu
+    span.d-none.d-lg-block
+      img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpeg' alt='...')
+  button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarResponsive.collapse.navbar-collapse
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#about') About
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#experience') Experience
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#education') Education
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#skills') Skills
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#interests') Interests
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#awards') Awards
+      li.nav-item
+        a.nav-link.js-scroll-trigger(href='#contact') Contact
+// Page Content
+.container-fluid.p-0
+  // About
+  section#about.resume-section
+    .resume-section-content
+      h1.mb-0
+        | Jaygovind
+        span.text-primary Sahu
+      .subheading.mb-5
+        | Downingtown, PA 19335 &middot; (609) 789-7641 &middot;
+        a(href='mailto:j@jaygovindsahu.com') j@jaygovindsahu.com
+      p.lead.mb-5
+        | I am a
+        b Data Engineer
+        |  with more than 12 years of experience in data modelling, data pipelines and data analytics.
+        |                 Currently, working on building and maintaining data pipelines using Python, PySpark and AWS infrastructure including EMR (Elastic MapReduce) and Glue.
+        |                 Also, I am learning data analytics and machine learning techniques - motivated to solve real life problems with the gained knowledge and experience.
+      .social-icons
+        a.social-icon(target='_blank' href='https://www.linkedin.com/in/jaygovind-sahu/')
+          i.fab.fa-linkedin-in
+        a.social-icon(target='_blank' href='https://github.com/jaygovind-sahu')
+          i.fab.fa-github
+        a.social-icon(target='_blank' href='https://stock.adobe.com/contributor/209004187/Jay')
+          i.fas.fa-camera-retro
+  hr.m-0
+  // Experience
+  section#experience.resume-section
+    .resume-section-content
+      h2.mb-5 Experience
+      .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+          h3.mb-0 Senior Data Engineer
+          .subheading.mb-3 Vanguard
+          p
+            | Working with business counterparts to gather requirements and building data pipelines which would enable successful functioning of multiple dashboards used by financial / business analysts.
+        .flex-shrink-0
+          span.text-primary April 2021 - Present
+      .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+          h3.mb-0 Data Engineer
+          .subheading.mb-3 Jornaya (a Verisk business)
+          p
+            | Built and maintained a core product of the organization dealing with data pipelines to process billions of records from clients and building usable reports for business users. Also, optimized Spark and EMR configuration which saved the organization more than 55% of AWS bill in one year.
+        .flex-shrink-0
+          span.text-primary December 2019 - April 2021
+      .d-flex.flex-column.flex-md-row.justify-content-between
+        .flex-grow-1
+          h3.mb-0 Data Developer
+          .subheading.mb-3 Tata Consultancy Services Ltd.
+          p
+            | Worked in multiple technologies and platforms for different clients in the financial domain - starting from legacy IBM Mainframes using COBOL and DB2 - to modern stacks using Python and Apache Spark. Contributed to multiple successful projects and assignments.
+        .flex-shrink-0
+          span.text-primary February 2010 - December 2019
+  hr.m-0
+  // Education
+  section#education.resume-section
+    .resume-section-content
+      h2.mb-5 Education
+      .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+        .flex-grow-1
+          h3.mb-0 Georgia University of Technology
+          .subheading.mb-3 Master of Science
+          div Analytics - Computational Analytics Track
+          p GPA: 3.66
+        .flex-shrink-0
+          span.text-primary January 2021 - Present
+      .d-flex.flex-column.flex-md-row.justify-content-between
+        .flex-grow-1
+          h3.mb-0 VSSUT, Burla, India
+          .subheading.mb-3 Bachelor of Technology
+          div Electrical Engineering
+          p CGPA: 7.5 / 10
+        .flex-shrink-0
+          span.text-primary August 2005 - May 2009
+  hr.m-0
+  // Skills
+  section#skills.resume-section
+    .resume-section-content
+      h2.mb-5 Skills
+      .subheading.mb-3 Programming Languages &amp; Tools
+      ul.list-inline.dev-icons
+        li.list-inline-item
+          i.fab.fa-python
+        li.list-inline-item
+          i.fas.fa-database
+        li.list-inline-item
+          i.fab.fa-aws
+        li.list-inline-item
+          i.fab.fa-r-project
+        li.list-inline-item
+          i.fab.fa-html5
+        li.list-inline-item
+          i.fab.fa-css3-alt
+      .subheading.mb-3 Workflow
+      ul.fa-ul.mb-0
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Programming with
+          b Python
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Data transformation and analytics using
+          b PySpark
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Data exploration and analysis using
+          b SQL
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Infrastructure-as-a-service using Amazon Web Services (
+          b AWS
+          | )
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Big Data analytics using AWS EMR and Glue
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Data analytics and machine learning using R
+        li
+          span.fa-li
+            i.fas.fa-check
+          |                     Basic web development using HTML5 and CSS3
+  hr.m-0
+  // Interests
+  section#interests.resume-section
+    .resume-section-content
+      h2.mb-5 Interests
+      p
+        | Apart from being a Data Engineer (and Data Analyst), I love photography and experimenting different techniques with my camera.
+        a(target='_blank' href='https://stock.adobe.com/contributor/209004187/Jay') Here
+        |  is the link to my Adobe Stock contributor profile.
+        |                 As you may notice from my portfolio, flowers are my favorite subjects for photography. I also love to spend time in the lap of nature - mostly hiking.
+      p.mb-0
+        | If I am not outdoors hiking and clicking away with my camera, I like to watch comedy and action movies. I also like to learn new technologies, so I spend time in experimenting with different languages, frameworks and services when I have some extra time with me.
+  hr.m-0
+  // Awards
+  section#awards.resume-section
+    .resume-section-content
+      h2.mb-5 Awards &amp; Certifications
+      ul.fa-ul.mb-0
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                     CSE6040x: SP21: Computing for Data Analysis - Georgia Institute of Technology (via edX)
+          a.social-icon(target='_blank' href='https://courses.edx.org/certificates/12e1612ecd7140e29751da5531af48f2') Certificate
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                     PH526x: Using Python for Research via HarvardX (edX)
+          a.social-icon(target='_blank' href='https://courses.edx.org/certificates/4f093e48e68641dba80dd1cb43be2d8d') Certificate
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                     Python Project: pillow, tesseract, and opencv (via Coursera - University of Michigan)
+          a.social-icon(target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/QKTHHD3J7FDZ') Certificate
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                     Data Collection and Processing with Python (via Coursera - University of Michigan)
+          a.social-icon(target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/BNFSU3JVKRHH') Certificate
+        li
+          span.fa-li
+            i.fas.fa-trophy.text-warning
+          |                     Applied Plotting, Charting &amp; Data Representation in Python (via Coursera - University of Michigan)
+          a.social-icon(target='_blank' href='https://www.coursera.org/account/accomplishments/certificate/BKNZE2TQFY4W') Certificate
+  // Contact
+  section#contact.resume-section
+    .resume-section-content
+      h2.mb-5 Contact Me
+      p Send a message or just say &quot;hi&quot;!
+      #contact-progress-spinner.spinner-border(role='status')
+        span.sr-only Loading...
+      #contact-success-alert.alert.alert-success
+        | Message sent. Thank you. :)
+      #contact-danger-alert.alert.alert-danger
+        | Something went wrong. Please try again after some time.
+      form#contact-form.needs-validation(novalidate='')
+        .form-group
+          input#contact-form-name.form-control(type='text' placeholder='Name' required='')
+          .invalid-feedback Please enter your name to continue.
+        .form-group
+          input#contact-form-email.form-control(type='email' placeholder='Email' required='')
+          .invalid-feedback Please enter a valid email address.
+        .form-group
+          textarea#contact-form-message.form-control(rows='3' placeholder='Message' required='')
+          .invalid-feedback Please enter a message to continue.
+        button#contact-form-submit.btn.btn-primary(type='submit') Send Message
+      script.
+        // Self-executing function
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        else {
+        sendMessage(event)
+        }
+        form.classList.add('was-validated');
+        }, false);
+        });
+        }, false);
+        })();
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+// Bootstrap core JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+// Core theme JS
+script(src='js/scripts.js')
