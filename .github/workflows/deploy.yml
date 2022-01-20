@@ -18,6 +18,6 @@ jobs:
                 npm install
                 npm run build
                 ls
-                git commit -Am "Updates from workflow"
+                git commit -i dist/* -m "Updates from workflow"
                 git status
                 git push origin `git subtree split --prefix dist main`:gh-pages --force
