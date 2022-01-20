@@ -11,12 +11,13 @@ jobs:
         steps:
             - env:
                 GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+            - name: Checkout
               uses: actions/checkout@v2
+            - name: Deploy
               run: |
-                  npm install
-                  npm run build
-                  git add --force dist
-                  git status
-                  git commit -m "Updates from Workflow"
-                  git subtree push --prefix dist origin gh-pages
-
+                npm install
+                npm run build
+                git add --force dist
+                git status
+                git commit -m "Updates from Workflow"
+                git subtree push --prefix dist origin gh-pages
