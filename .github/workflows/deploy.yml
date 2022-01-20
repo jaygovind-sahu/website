@@ -9,6 +9,8 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
+            - env:
+                GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             - name: checkout
               uses: actions/checkout@v2
               with:
