@@ -12,9 +12,8 @@ jobs:
             - name: checkout
               uses: actions/checkout@v2
               with:
-                  token: ${{secrets.GH_TOKEN}}
+                  token: ${{ secrets.GH_TOKEN }}
             - run: |
-                  npm install
                   npm run build
                   git add --force dist
                   git status
