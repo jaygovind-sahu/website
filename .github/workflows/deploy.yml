@@ -14,6 +14,7 @@ jobs:
               with:
                   token: ${{ secrets.GH_TOKEN }}
             - run: |
+                  npm install
                   npm run build
                   git add --force dist
                   git status
