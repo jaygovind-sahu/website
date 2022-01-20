@@ -17,7 +17,8 @@ jobs:
                 git config user.email github-actions@github.com
                 npm install
                 npm run build
-                git add dist
+                ls
+                git add dist/*
                 git status
                 git commit -m "Updates from Workflow"
                 git push origin :gh-pages
