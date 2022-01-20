@@ -1,0 +1,23 @@
+name: Package and Deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+              with:
+                  token: ${{secrets.GH_TOKEN}}
+            - run: |
+                  npm install
+                  npm run build
+                  git add --force dist
+                  git status
+                  git commit "Updates from Workflow"
+                  git subtree push --prefix dist origin gh-pages
+
