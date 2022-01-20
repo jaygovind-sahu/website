@@ -18,7 +18,7 @@ jobs:
                 npm install
                 npm run build
                 ls
-                git add dist/*
+                git add .
                 git status
                 git commit -m "Updates from Workflow"
                 git push origin :gh-pages
