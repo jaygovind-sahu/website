@@ -9,11 +9,10 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - env:
-                GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
             - name: Checkout
               uses: actions/checkout@v2
-            - name: Deploy
+            - env:
+                GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
               run: |
                 npm install
                 npm run build
