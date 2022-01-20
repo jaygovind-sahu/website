@@ -13,11 +13,12 @@ jobs:
               uses: actions/checkout@v2
             - name: Deploy
               run: |
+                rm .gitignore
                 git config user.name github-actions
                 git config user.email github-actions@github.com
                 npm install
                 npm run build
-                git add --force dist/*
+                git add dist/*
                 git status
-                git commit -m "Updates from Workflow"
+                git commit -am "Updates from Workflow"
                 git subtree push --prefix dist origin gh-pages
