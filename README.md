@@ -18,3 +18,8 @@ On successful build on `main`, the static website is pushed to `gh-pages` branch
 - `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
 
 You must have npm installed in order to use this build environment.
+
+#3 Using docker
+
+- `docker build -t jgs` builds the docker image
+- `docker run --network host -v `pwd`/src:/app/src jgs` runs the app within docker
