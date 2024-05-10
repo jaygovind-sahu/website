@@ -22,7 +22,7 @@ function sendMessage(event) {
 
      $.ajax({
       type: "POST",
-      url : "https://flask-email-sender.herokuapp.com/message",
+      url : "https://flask-email-sender.onrender.com/message",
       dataType: "json",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
