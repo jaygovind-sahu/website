@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Jaygovind Sahu v0.0.1 (https://jaygovind-sahu.github.io)
-* Copyright 2013-2022 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/jaygovind-sahu.github.io/blob/master/LICENSE)
 */
 //
@@ -27,7 +27,7 @@ function sendMessage(event) {
 
      $.ajax({
       type: "POST",
-      url : "https://flask-email-sender.herokuapp.com/message",
+      url : "https://flask-email-sender.onrender.com/message",
       dataType: "json",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
